@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Hamza</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#porfolio">Portfilio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi , I'm <span>Hamza</span> <br> Nawabi From Afghanistan</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Abc.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet repellendus, possimus architecto maiores vel beatae itaque cupiditate odit amet molestias mollitia ipsam consequuntur nemo impedit laborum quidem? Amet, ullam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet repellendus, possimus architecto maiores vel beatae itaque cupiditate odit amet molestias mollitia ipsam consequuntur nemo impedit laborum quidem? Amet, ullam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet repellendus, possimus architecto maiores vel beatae itaque cupiditate odit amet molestias mollitia ipsam consequuntur nemo impedit laborum quidem? Amet, ullam.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/Ux</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Designing Web/App interfaces</li>
+                            <li><span>Backend Development</span><br>Designing Web/App Backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Designing Web/App interfaces</li>
+                            <li><span>2019 - 2021</span><br>Team Lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd</li>
+                            <li><span>2016 - 2017</span><br>Intership at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2020</span><br>UX/UI Design Training at ET Institute</li>
+                            <li><span>2021</span><br>BCS in RANA University</li>
+                            <li><span>2022</span><br>Full Stack WEB Development In Startupstan</li>
+                            <li><span>2023</span><br>Online Course Develop My Skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------Services----------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio magni dolorum rerum minima. At ipsam non vitae excepturi voluptates, saepe fuga velit laboriosam ipsum dicta ipsa natus dolorem cupiditate.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio magni dolorum rerum minima. At ipsam non vitae excepturi voluptates, saepe fuga velit laboriosam ipsum dicta ipsa natus dolorem cupiditate.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-duotone fa-server"></i>
+                    <h2>Backend Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio magni dolorum rerum minima. At ipsam non vitae excepturi voluptates, saepe fuga velit laboriosam ipsum dicta ipsa natus dolorem cupiditate.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------Portfolio----------------------- -->
+    <div id="porfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work.jpg" alt="">
+                    <div class="layer">
+                        <h3>Web App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, odio modi ad natus quidem laudantium ex exercitationem excepturi officiis et?</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Responsive App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, odio modi ad natus quidem laudantium ex exercitationem excepturi officiis et?</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Backend Development</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, odio modi ad natus quidem laudantium ex exercitationem excepturi officiis et?</p>
+                        <a href=""><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- ------------------------Contact------------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sut-title">Contact Me</h1>
+                    <p><i class="fa fa-duotone fa-paper-plane"></i>hamza.nawabi119@gmail.com</p>
+                    <p><i class="fa fa-duotone fa-mobile"></i>+93766420877</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="./images/HamzaCV.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <h3 id="msg"></h3>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Hamza Nawabi <i class="fa-solid fa-heart"></i> Reseved All Rights</p>
+        </div>
+    </div>
+
+    <script>
+        // Tabs Section
+        function opentab(tabname){
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+                for(tablinks of tablinks){
+                    tablinks.classList.remove("active-link");
+                }
+                for(tabcontents of tabcontents){
+                    tabcontents.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add('active-tab');
+        }
+        // Menu Section
+        const sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0"            
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <!-- Go And Take The Functions From This Github Link https://github.com/jamiewilson/form-to-google-sheets -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby1fKOlRCNY9fKoG2hBiaR-CNNNKIPjGDvtAklVZK-rLl2EuuBoqkRJqVyLn3boyQ3U6g/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          msg.innerHTML = "Please Wait ..."
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Your Message Send Successfuly..."
+                setTimeout(()=>{
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => meg.innerHTML = 'Error! '+ error.message)
+        })
+      </script>
+</body>
+</html>
